@@ -140,7 +140,12 @@ func (session *Session) bytes2Value(col *schemas.Column, fieldValue *reflect.Val
 			return ErrUnSupportedType
 		}
 	case reflect.String:
-		fieldValue.SetString(string(data))
+		loc, _ := time.LoadLocation("Local")
+		if tm, err := time.ParseInLocation("2006-01-02T15:04:05Z", string(data), loc); err == nil {
+			fieldValue.SetString(tm.Format("2006-01-02 15:04:05"))
+		} else {
+			fieldValue.SetString(string(data))
+		}
 	case reflect.Bool:
 		v, err := asBool(data)
 		if err != nil {
