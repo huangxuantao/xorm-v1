@@ -116,3 +116,24 @@ func LeastConnPolicy() GroupPolicyHandler {
 		return slaves[idx]
 	}
 }
+
+func MasterFirstPolicy() GroupPolicyHandler {
+	var pos = -1
+	var lock sync.Mutex
+	return func(g *EngineGroup) *Engine {
+		if g.Master().live == true {
+			return g.Master()
+		}
+
+		var slaves = g.Slaves()
+
+		lock.Lock()
+		defer lock.Unlock()
+		pos++
+		if pos >= len(slaves) {
+			pos = 0
+		}
+
+		return slaves[pos]
+	}
+}

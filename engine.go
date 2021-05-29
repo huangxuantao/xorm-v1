@@ -46,6 +46,8 @@ type Engine struct {
 	DatabaseTZ *time.Location // The timezone of the database
 
 	logSessionID bool // create session id
+
+	live bool
 }
 
 // NewEngine new a db manager according to the parameter. Currently support four
