@@ -17,11 +17,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/huangxuantao/xorm-v1/internal2/utils"
 	"xorm.io/xorm/caches"
 	"xorm.io/xorm/contexts"
 	"xorm.io/xorm/core"
 	"xorm.io/xorm/dialects"
-	"xorm.io/xorm/internal/utils"
 	"xorm.io/xorm/log"
 	"xorm.io/xorm/names"
 	"xorm.io/xorm/schemas"

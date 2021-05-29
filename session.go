@@ -18,11 +18,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/huangxuantao/xorm-v1/internal2/json"
+	"github.com/huangxuantao/xorm-v1/internal2/statements"
 	"xorm.io/xorm/contexts"
 	"xorm.io/xorm/convert"
 	"xorm.io/xorm/core"
-	"xorm.io/xorm/internal/json"
-	"xorm.io/xorm/internal/statements"
 	"xorm.io/xorm/log"
 	"xorm.io/xorm/schemas"
 )

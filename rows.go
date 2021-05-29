@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/huangxuantao/xorm-v1/internal2/utils"
 	"xorm.io/builder"
 	"xorm.io/xorm/core"
-	"xorm.io/xorm/internal/utils"
 )
 
 // Rows rows wrapper a rows to

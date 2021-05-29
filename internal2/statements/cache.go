@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"xorm.io/xorm/internal/utils"
+	"github.com/huangxuantao/xorm-v1/internal2/utils"
 	"xorm.io/xorm/schemas"
 )
 

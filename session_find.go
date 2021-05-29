@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/huangxuantao/xorm-v1/internal2/statements"
+	"github.com/huangxuantao/xorm-v1/internal2/utils"
 	"xorm.io/builder"
 	"xorm.io/xorm/caches"
-	"xorm.io/xorm/internal/statements"
-	"xorm.io/xorm/internal/utils"
 	"xorm.io/xorm/schemas"
 )
 

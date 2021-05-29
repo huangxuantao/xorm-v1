@@ -11,8 +11,8 @@ import (
 	"reflect"
 	"strconv"
 
+	"github.com/huangxuantao/xorm-v1/internal2/utils"
 	"xorm.io/xorm/caches"
-	"xorm.io/xorm/internal/utils"
 	"xorm.io/xorm/schemas"
 )
 

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/huangxuantao/xorm-v1/internal2/json"
+	"github.com/huangxuantao/xorm-v1/internal2/utils"
 	"xorm.io/builder"
 	"xorm.io/xorm/contexts"
 	"xorm.io/xorm/convert"
 	"xorm.io/xorm/dialects"
-	"xorm.io/xorm/internal/json"
-	"xorm.io/xorm/internal/utils"
 	"xorm.io/xorm/schemas"
 	"xorm.io/xorm/tags"
 )
